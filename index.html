@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devulapalli Abhiram - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DA</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Devulapalli Abhiram</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    B.Sc. Computer Science Student | Passionate Developer | Creative Problem Solver
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s">😘</div>
+                    <div class="floating-element" style="--delay: 1s">😊</div>
+                    <div class="floating-element" style="--delay: 2s">😍</div>
+                    <div class="floating-element" style="--delay: 3s">🫠</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section (Terminal Style) -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                      <span class="btn-close"></span>
+                      <span class="btn-minimize"></span>
+                      <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">abhiram@portfolio:~$</div>
+                  </div>
+                  <div class="terminal-body">
+                    <div class="terminal-welcome" id="terminal-welcome">
+                      <div class="terminal-line">
+                        <span class="prompt">abhiram@dev:~$</span>
+                        <span class="command">Welcome to Abhiram's Interactive Terminal!</span>
+                      </div>
+                      <div class="terminal-line">
+                        <span class="info">Type 'help' to see available commands</span>
+                      </div>
+                    </div>
+                    <div class="terminal-output" id="terminal-output"></div>
+                    <div class="terminal-input-line">
+                      <span class="prompt">abhiram@dev:~$</span>
+                      <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false">
+                      <span class="terminal-cursor">_</span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Video Editing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-video"></i>
+                            <span>Adobe Premiere Pro</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-film"></i>
+                            <span>DaVinci Resolve</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>After Effects</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Problem Solving</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="cert-grid">
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="https://i.ibb.co/ds3h0cfR/cert-2.png" alt="HackerRank SQL Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>HackerRank SQL (Basic)</h3>
+                  <p>Certified in basic SQL concepts and query optimization</p>
+                  <div class="cert-badge">Verified</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="https://i.ibb.co/8nyzxZrx/cert-1.png" alt="HackerRank CSS Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>HackerRank CSS (Basic)</h3>
+                  <p>Demonstrated proficiency in CSS styling and responsive design</p>
+                  <div class="cert-badge">Verified</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Udemy Web Development Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>Web Development Fundamentals</h3>
+                  <p>Complete course on modern web development practices</p>
+                  <div class="cert-badge">Completed</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="https://i.ibb.co/21jMhR34/UC-43f7bf70-757f-4efb-95b3-34c7cadb022f.jpg" alt="Udemy JavaScript Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>Blender Megacourse: Beginner to Expert</h3>
+                  <p>Deep dive into blender</p>
+                  <div class="cert-badge">Completed</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Coursera CS Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>Computer Science Fundamentals</h3>
+                  <p>Core concepts in computer science and programming</p>
+                  <div class="cert-badge">Completed</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Coursera Data Structures Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>Data Structures and Algorithms</h3>
+                  <p>Advanced problem-solving and algorithmic thinking</p>
+                  <div class="cert-badge">Completed</div>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Coursera Database Certificate">
+                </div>
+                <div class="cert-content">
+                  <h3>Database Management Systems</h3>
+                  <p>Comprehensive database design and management</p>
+                  <div class="cert-badge">Completed</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Experience</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://i.ibb.co/RT099dfv/cert-6.jpg" alt="CodSoft Internship">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Internship</div>
+                        <h3>CodSoft Web Development Internship</h3>
+                        <p>Completed a comprehensive web development internship focusing on frontend technologies, responsive design, and modern web practices.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Book Platform</h3>
+                        <p>The SSSIHL-NDG Digital Library serves as the cornerstone of  academic excellence. Our comprehensive digital repository provides students, faculty with unrestricted access to a vast collection of academic resources, and educational materials spanning multiple disciplines.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Video Editing Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Video Editing Showcase</h3>
+                        <p>Collection of video editing projects using Adobe Creative Suite and DaVinci Resolve.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Premiere Pro</span>
+                            <span class="tech-tag">DaVinci</span>
+                            <span class="tech-tag">After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="certificates">Certificates & Projects</button>
+                <button class="tab-btn" data-tab="awards">Awards</button>
+                <button class="tab-btn" data-tab="sports">Sports & Culture</button>
+            </div>
+            <div class="gallery-content">
+                <div class="gallery-tab active" id="certificates">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 1">
+                            <div class="gallery-overlay">
+                                <h4>HackerRank SQL Certificate</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 2">
+                            <div class="gallery-overlay">
+                                <h4>Udemy Web Development</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Project 1">
+                            <div class="gallery-overlay">
+                                <h4>CodSoft Project</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Certificate 3">
+                            <div class="gallery-overlay">
+                                <h4>Coursera Certificate</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Project 2">
+                            <div class="gallery-overlay">
+                                <h4>Portfolio Project</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-tab" id="awards">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Award 1">
+                            <div class="gallery-overlay">
+                                <h4>Academic Excellence</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Award 2">
+                            <div class="gallery-overlay">
+                                <h4>Programming Contest</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Award 3">
+                            <div class="gallery-overlay">
+                                <h4>Best Project Award</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Award 4">
+                            <div class="gallery-overlay">
+                                <h4>Leadership Award</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Award 5">
+                            <div class="gallery-overlay">
+                                <h4>Innovation Award</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-tab" id="sports">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Cricket">
+                            <div class="gallery-overlay">
+                                <h4>Cricket Tournament</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Drama">
+                            <div class="gallery-overlay">
+                                <h4>Drama Performance</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Stunts">
+                            <div class="gallery-overlay">
+                                <h4>Stunt Performance</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Sports Day">
+                            <div class="gallery-overlay">
+                                <h4>Sports Day Event</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Cultural Event">
+                            <div class="gallery-overlay">
+                                <h4>Cultural Festival</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <p>Let's connect and discuss opportunities!</p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:abhiramdevulapalli8@gmail.com">abhiramdevulapalli8@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Sri Sathya Sai Institute of Higher Learning</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Andhra Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Contact</h3>
+            <form id="quick-contact-form" class="quick-contact-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <textarea placeholder="Your Message" rows="3" required></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Me</h3>
+            <div class="social-links-large">
+              <a href="#" class="social-link-large">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/abhiram-devulapalli-2bb634249/" class="social-link-large">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link-large">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Devulapalli Abhiram. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
